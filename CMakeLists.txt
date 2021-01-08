@@ -29,3 +29,10 @@ add_executable(rpclib_client_demo src/rpclib_client.cpp)
 target_link_libraries(rpclib_client_demo ${LINK_LIB})
 add_executable(rpclib_server_demo src/rpclib_server.cpp)
 target_link_libraries(rpclib_server_demo ${LINK_LIB})
+
+
+list(APPEND LINK_LIB boost_system)
+add_executable(websocketpp_server_demo src/websocketpp_demo_server.cpp)
+target_link_libraries(websocketpp_server_demo ${LINK_LIB})
+add_executable(websocketpp_client_demo src/websocketpp_demo_client.cpp)
+target_link_libraries(websocketpp_client_demo ${LINK_LIB})
