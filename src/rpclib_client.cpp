@@ -22,12 +22,14 @@ int main(int argc, char** argv) {
   std::cout << "msgdata: test1= " << msgdata2.test1 << " test2:" << msgdata2.test2 << " test3:" << msgdata2.test3
             << "\n";
 
+  int mm = 0;
   while (true) {
+    mm++;
     // 第一种请求方式
     auto msgdata1 = client.call("1", 123).as<MsgStruct>();
-    std::cout << "msgdata: test1= " << msgdata1.test1 << " test2:" << msgdata1.test2 << " test3:" << msgdata1.test3
+    std::cout << mm << " msgdata: test1= " << msgdata1.test1 << " test2:" << msgdata1.test2 << " test3:" << msgdata1.test3
               << "\n";
-    std::this_thread::sleep_for(std::chrono::milliseconds(20));
+    std::this_thread::sleep_for(std::chrono::milliseconds(2));
     // 20ms
   }
   return 0;
