@@ -2,9 +2,11 @@
 #include "rpclib_data.h"
 #include <iostream>
 
-int main() {
+int main(int argc, char** argv) {
+  auto ip = argv[1];
+  int  port = atoi(argv[2]);
   // 创建客户端连接,一直等待连接成功
-  rpc::client client("127.0.0.1", 12452);
+  rpc::client client(ip, port);
 
   auto two = client.call("2").as<std::string>();
   std::cout << "two: " << two << "\n";
@@ -15,7 +17,7 @@ int main() {
             << "\n";
 
   // 第二种async请求方式
-  auto one      = client.async_call("1", 123);
+  auto one = client.async_call("1", 123);
   auto msgdata2 = one.get().as<MsgStruct>();
   std::cout << "msgdata: test1= " << msgdata2.test1 << " test2:" << msgdata2.test2 << " test3:" << msgdata2.test3
             << "\n";

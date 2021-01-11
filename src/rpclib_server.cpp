@@ -17,8 +17,9 @@ std::string Two() {
   return "success";
 }
 
-int main() {
-  rpc::server server(12452);
+int main(int argc, char** argv) {
+  int port = atoi(argv[1]);
+  rpc::server server(port);
   // 服务端可以使用一个自定义值（数字、字母等）作为请求参数，该参数绑定一个函数
   server.bind("1", &One);
   server.bind("2", &Two);
