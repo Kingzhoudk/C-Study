@@ -4,7 +4,8 @@
 #include <iostream>
 #include <thread>
 
-MsgStruct One(double msg){
+MsgStruct One(double msg) {
+  std::cout << "One() success\n";
   return {
     .test1 = msg,
     .test2 = 2.0,
@@ -18,13 +19,13 @@ std::string Two() {
 }
 
 int main(int argc, char** argv) {
-  int port = atoi(argv[1]);
+  int         port = atoi(argv[1]);
   rpc::server server(port);
   // 服务端可以使用一个自定义值（数字、字母等）作为请求参数，该参数绑定一个函数
   server.bind("1", &One);
   server.bind("2", &Two);
   // async_run(worker_threads)，开多个线程保证并发访问
-  server.async_run(2);
+  server.async_run(1);
   while (true) {
     std::this_thread::sleep_for(std::chrono::seconds(2));
   }
