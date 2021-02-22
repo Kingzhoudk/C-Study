@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/study_const.dir/src/study_const.cpp.o  -o study_const 
