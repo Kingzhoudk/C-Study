@@ -1,5 +1,0 @@
-/home/dk/zhoudk/C-Study/mqtt/build/CMakeFiles/mqtt_publish_demo.dir
-/home/dk/zhoudk/C-Study/mqtt/build/CMakeFiles/edit_cache.dir
-/home/dk/zhoudk/C-Study/mqtt/build/CMakeFiles/mqtt_publish_demo2.dir
-/home/dk/zhoudk/C-Study/mqtt/build/CMakeFiles/mqtt_subscribed_demo.dir
-/home/dk/zhoudk/C-Study/mqtt/build/CMakeFiles/rebuild_cache.dir
