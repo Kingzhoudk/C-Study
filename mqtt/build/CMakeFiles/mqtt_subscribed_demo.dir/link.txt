@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/mqtt_subscribed_demo.dir/mqtt_subscribed_demo.cpp.o  -o mqtt_subscribed_demo -lmosquitto 

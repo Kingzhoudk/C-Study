@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/rpclib_server_demo.dir/rpclib_server.cpp.o  -o rpclib_server_demo rpc/librpc.a -lpthread 

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+.././cxxopts/cxxopts/cxxopts.hpp
+cstring
+-
+cctype
+-
+exception
+-
+iostream
+-
+limits
+-
+map
+-
+memory
+-
+regex
+-
+sstream
+-
+string
+-
+unordered_map
+-
+unordered_set
+-
+vector
+-
+optional
+-
+unicode/unistr.h
+-
+
+/home/dk/zhoudk/C-Study/cxxopts/cxxopts.cpp
+cxxopts/cxxopts.hpp
+/home/dk/zhoudk/C-Study/cxxopts/cxxopts/cxxopts.hpp
+

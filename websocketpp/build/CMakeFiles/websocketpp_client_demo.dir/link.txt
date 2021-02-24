@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/websocketpp_client_demo.dir/websocketpp_demo_client.cpp.o  -o websocketpp_client_demo -lboost_system -lpthread 

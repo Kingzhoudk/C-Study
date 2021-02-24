@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dk/zhoudk/C-Study/mqtt/mqtt_publish_demo2.cpp
+iostream
+-
+mosquitto.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+thread
+-
+unistd.h
+-
+

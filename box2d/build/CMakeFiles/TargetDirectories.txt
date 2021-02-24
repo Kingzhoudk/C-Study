@@ -1,0 +1,5 @@
+/home/dk/zhoudk/C-Study/box2d/build/CMakeFiles/edit_cache.dir
+/home/dk/zhoudk/C-Study/box2d/build/CMakeFiles/rebuild_cache.dir
+/home/dk/zhoudk/C-Study/box2d/build/CMakeFiles/box2d_demo2.dir
+/home/dk/zhoudk/C-Study/box2d/build/CMakeFiles/box2d_demo1.dir
+/home/dk/zhoudk/C-Study/box2d/build/CMakeFiles/box2d_demo3.dir

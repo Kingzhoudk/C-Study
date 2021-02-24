@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DNDEBUG   CMakeFiles/cxxopts_demo.dir/cxxopts.cpp.o  -o cxxopts_demo 

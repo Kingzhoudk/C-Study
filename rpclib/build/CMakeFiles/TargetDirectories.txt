@@ -1,0 +1,15 @@
+/home/dk/zhoudk/C-Study/rpclib/build/CMakeFiles/install.dir
+/home/dk/zhoudk/C-Study/rpclib/build/CMakeFiles/list_install_components.dir
+/home/dk/zhoudk/C-Study/rpclib/build/CMakeFiles/rebuild_cache.dir
+/home/dk/zhoudk/C-Study/rpclib/build/CMakeFiles/edit_cache.dir
+/home/dk/zhoudk/C-Study/rpclib/build/CMakeFiles/rpclib_server_demo.dir
+/home/dk/zhoudk/C-Study/rpclib/build/CMakeFiles/rpclib_client_demo.dir
+/home/dk/zhoudk/C-Study/rpclib/build/CMakeFiles/install/local.dir
+/home/dk/zhoudk/C-Study/rpclib/build/CMakeFiles/install/strip.dir
+/home/dk/zhoudk/C-Study/rpclib/build/rpc/CMakeFiles/install.dir
+/home/dk/zhoudk/C-Study/rpclib/build/rpc/CMakeFiles/list_install_components.dir
+/home/dk/zhoudk/C-Study/rpclib/build/rpc/CMakeFiles/rebuild_cache.dir
+/home/dk/zhoudk/C-Study/rpclib/build/rpc/CMakeFiles/rpc.dir
+/home/dk/zhoudk/C-Study/rpclib/build/rpc/CMakeFiles/install/strip.dir
+/home/dk/zhoudk/C-Study/rpclib/build/rpc/CMakeFiles/install/local.dir
+/home/dk/zhoudk/C-Study/rpclib/build/rpc/CMakeFiles/edit_cache.dir
