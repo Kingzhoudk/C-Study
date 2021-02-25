@@ -55,12 +55,20 @@ int main() {
     printf("mosquitto loop error\n");
     return 1;
   }
-  double lat = 3407895.0;
-  double lon = 1003735.0;
+  double lat = 3857.864428;
+  double lon = 5427.337348;
   double theta = 0;
+  int msg = 0;
   while (true) {
     /*发布消息*/
-    lat = lat + 1;
+    msg++;
+    if (msg == 50) {
+      double lat = 3857.864428;
+      double lon = 5427.337348;
+      double theta = 0;
+      int msg = 0;
+    }
+    lat++;
     lon++;
     theta++;
     std::string msg = "{\"params\": {\"location\": {\"lat\": " + std::to_string(lat)
