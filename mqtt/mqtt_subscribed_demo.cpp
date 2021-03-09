@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define HOST "localhost"
+#define HOST "127.0.0.1"
 #define PORT 1883
 #define KEEP_ALIVE 60
 
@@ -25,7 +25,6 @@ void my_connect_callback(struct mosquitto* mosq, void* userdata, int result) {
   if (!result) {
     // 连接成功，开启订阅
     printf("Connect succeed\n");
-    mosquitto_subscribe(mosq, NULL, "test", 2);
   }
   else {
     fprintf(stderr, "Connect failed\n");
@@ -63,10 +62,11 @@ int main() {
   mosquitto_message_callback_set(mosq, my_message_callback);
   //mosquitto_subscribe_callback_set(mosq, my_subscribe_callback);
   //客户端连接服务器
-  if (mosquitto_connect(mosq, HOST, PORT, KEEP_ALIVE)) {
-    fprintf(stderr, "Unable to connect.\n");
-    return 1;
+  if (mosquitto_username_pw_set(mosq, "compass", "compass")) {
+    printf("failed");
   }
+  mosquitto_connect_async(mosq, HOST, PORT, KEEP_ALIVE);
+  mosquitto_subscribe(mosq, NULL, "test", 2);
   //循环处理网络消息
   //It handles reconnecting in case server connection is lost.
   //掉线后重新会重新连接

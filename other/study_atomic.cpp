@@ -8,14 +8,17 @@ struct Data {
   int a = 0;
   double b = 0;
 };
+struct Data2 {
+  char a[12] = "asd";
+  double b = 0;
+};
 
-std::atomic<Data> data;
+std::atomic<Data2> data;
 
 void threadFunc() {
   for (int i = 0; i < 2000; i++) {
     usleep(1);
-    data.load(std::memory_order_relaxed).a++;
-    data.load(std::memory_order_relaxed).b++;
+    
   }
 }
 

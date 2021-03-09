@@ -6,7 +6,7 @@
 #include <thread>
 #include <unistd.h>
 
-#define HOST "127.0.0.1"
+#define HOST "117.0.0.1"
 #define PORT 1883
 #define KEEP_ALIVE 60
 #define MSG_MAX_SIZE 512
@@ -42,7 +42,7 @@ int main() {
     std::cout << "failed";
   }
   //连接服务器
-  if (mosquitto_connect(mosq, HOST, PORT, KEEP_ALIVE)) {
+  if (mosquitto_connect_async(mosq, HOST, PORT, KEEP_ALIVE)) {
     fprintf(stderr, "Unable to connect.\n");
     return 1;
   }
