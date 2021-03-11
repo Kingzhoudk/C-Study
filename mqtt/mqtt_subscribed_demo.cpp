@@ -12,7 +12,7 @@ bool session = true;
 void my_message_callback(struct mosquitto* mosq, void* userdata, const struct mosquitto_message* message) {
   // 收到消息，打印
   if (message->payloadlen) {
-    printf("%s : %s", message->topic, message->payload);
+    printf("%s : %s\n\n\n\n", message->topic, message->payload);
   }
   else {
     printf("%s (null)\n", message->topic);
@@ -67,6 +67,9 @@ int main() {
   }
   mosquitto_connect_async(mosq, HOST, PORT, KEEP_ALIVE);
   mosquitto_subscribe(mosq, NULL, "test", 2);
+  mosquitto_subscribe(mosq, NULL, "test1", 2);
+  mosquitto_subscribe(mosq, NULL, "test2", 2);
+  mosquitto_subscribe(mosq, NULL, "test3", 2);
   //循环处理网络消息
   //It handles reconnecting in case server connection is lost.
   //掉线后重新会重新连接

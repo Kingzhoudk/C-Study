@@ -42,7 +42,7 @@ int main() {
     std::cout << "failed";
   }
   //连接服务器
-  if (mosquitto_connect_async(mosq, HOST, PORT, KEEP_ALIVE)) {
+  if (mosquitto_connect(mosq, HOST, PORT, KEEP_ALIVE)) {
     fprintf(stderr, "Unable to connect.\n");
     return 1;
   }
