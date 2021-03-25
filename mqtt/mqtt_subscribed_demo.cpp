@@ -12,7 +12,7 @@ bool session = true;
 void my_message_callback(struct mosquitto* mosq, void* userdata, const struct mosquitto_message* message) {
   // 收到消息，打印
   if (message->payloadlen) {
-    printf("%s : %s\n\n\n\n", message->topic, message->payload);
+    printf("%s : %s\n", message->topic, message->payload);
   }
   else {
     printf("%s (null)\n", message->topic);
@@ -66,7 +66,7 @@ int main() {
     printf("failed");
   }
   mosquitto_connect_async(mosq, HOST, PORT, KEEP_ALIVE);
-  mosquitto_subscribe(mosq, NULL, "test", 2);
+  mosquitto_subscribe(mosq, NULL, "/efence_k8s_backend/logging/report", 2);
   mosquitto_subscribe(mosq, NULL, "test1", 2);
   mosquitto_subscribe(mosq, NULL, "test2", 2);
   mosquitto_subscribe(mosq, NULL, "test3", 2);

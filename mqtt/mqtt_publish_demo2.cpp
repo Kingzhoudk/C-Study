@@ -6,7 +6,7 @@
 #include <thread>
 #include <unistd.h>
 
-#define HOST "117.0.0.1"
+#define HOST "127.0.0.1"
 #define PORT 1883
 #define KEEP_ALIVE 60
 #define MSG_MAX_SIZE 512
